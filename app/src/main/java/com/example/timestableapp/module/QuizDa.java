@@ -37,13 +37,7 @@ public class QuizDa {
 
 
     public Quiz getA(int Question){
-        String ANSWER = null;
 
-//        for (Quiz a:quiz){
-//            if (a.getQuestion().equals(Question)){
-//                ANSWER =a.getAnswer();
-//            }
-//        }
         return quiz.get(Question);
     }
     public Quiz getQ(int current){

@@ -18,7 +18,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="60dp"
+        android:layout_margin="20dp"
         android:visibility="gone"
 
         tools:srcCompat="@tools:sample/avatars" />
@@ -63,7 +63,7 @@
         android:text="Curr"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
@@ -80,95 +80,99 @@
         android:textStyle="bold"
         android:visibility="visible" />
 
-
-    <LinearLayout
-        android:id="@+id/Linear"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical"
-        android:visibility="visible">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/Linear"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/Answer_A"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="ANS A"
-                android:textSize="20dp"
-
-
-                />
-
-            <Button
-                android:id="@+id/Answer_B"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="ANS B"
-                android:textSize="20dp"
-
-
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/Answer_C"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="ANS C"
-                android:textSize="20dp"
-
-
-                />
-
-            <Button
-                android:id="@+id/Answer_D"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="ANS D"
-                android:textSize="20dp"
-
-
-                />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="30dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="sans-serif-condensed"
-            android:gravity="center"
-            android:text="التالي"
-            android:textSize="25dp" />
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Answer_A"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="ANS A"
+                    android:textSize="20dp"
 
 
-    </LinearLayout>
+                    />
+
+                <Button
+                    android:id="@+id/Answer_B"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="ANS B"
+                    android:textSize="20dp"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Answer_C"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="ANS C"
+                    android:textSize="20dp"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/Answer_D"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="ANS D"
+                    android:textSize="20dp"
+
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="التالي"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
