@@ -3,6 +3,7 @@ package com.example.timestableapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView   totalQuestiontextView,Grade, CurrentTextView;
     private TextView   QuestiontextView;
-    private Button      AnsA,AnsB,AnsC,AnsD,SubmitBtn,RetakeBtn;
+    private Button      AnsA,AnsB,AnsC,AnsD,SubmitBtn,RetakeBtn,CheckBtn;
 
     private LinearLayout back;
     private LinearLayout Linear;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imageView=findViewById(R.id.imageView);
         Grade=findViewById(R.id.Grade);
         RetakeBtn=findViewById(R.id.RetakeBtn);
+        CheckBtn=findViewById(R.id.Check);
         CurrentTextView=findViewById(R.id.CurrentTextView);
 
 
@@ -107,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else
         {
                 Selected_Answer = clickButton.getText().toString();
-                clickButton.setBackgroundColor(Color.GRAY);
+                clickButton.setBackgroundColor(R.color.reem);
         }
 
     }
@@ -125,6 +127,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AnsC.setText(QuizDa.choices[Current][2]);
         AnsD.setText(QuizDa.choices[Current][3]);
 
+
+
     }
     void finishQuiz(){
         int FinalGrade =0;
@@ -135,6 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         back.setBackgroundColor(Color.WHITE);
         Grade.setVisibility(View.VISIBLE);
         RetakeBtn.setVisibility(View.VISIBLE);
+        CheckBtn.setVisibility(View.VISIBLE);
         if(FinalAnswer > 5){
             FinalGrade = FinalAnswer*10;
             Grade.setText("Gongraulation"+"\n"+ FinalGrade +"%");
@@ -170,5 +175,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        CheckBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,
+                        MainActivity2.class);
+                startActivity(intent);
+            }
+        });
     }
 }

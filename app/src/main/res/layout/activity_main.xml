@@ -5,7 +5,7 @@
     android:id="@+id/bac"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#252940"
+    android:background="@color/gd"
     android:orientation="vertical"
 
     android:padding="20dp"
@@ -33,6 +33,14 @@
         android:textColor="@color/black"
         android:textSize="34sp"
         android:visibility="gone" />
+
+    <Button
+        android:id="@+id/Check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:text="check Answers?" />
 
     <Button
         android:id="@+id/RetakeBtn"

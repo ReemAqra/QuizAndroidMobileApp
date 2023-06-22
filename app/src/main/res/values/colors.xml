@@ -2,7 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="reem">#252940</color>
-    <color name="bd">#30396A</color>
-    <color name="bdg">#0B123C</color>
+    <color name="reem">#FFA000</color>
+    <color name="bd">#FFF091</color>
+    <color name="yello">#FFDD00</color>
+    <color name="dd">#DDA600</color>
+    <color name="gd">#2F025C</color>
 </resources>
